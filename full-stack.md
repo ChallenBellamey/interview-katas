@@ -1,5 +1,7 @@
 # The LateRooms Group full-stack task
 
+> It is recommended you review the [submission guidelines](SUBMISSION-GUIDELINES.md) before starting the exercise.
+
 Please take as much time as you see appropriate to tackle this task. Your solution will be the basis for a discussion during our interview.
 
 ## The task

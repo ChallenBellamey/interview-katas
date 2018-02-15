@@ -4,4 +4,6 @@ Following the Guardian's [example](https://www.theguardian.com/info/developer-bl
 
 Different roles will have different interviewing techniques and criteria, and you will be advised of this as part of the application process.
 
+It is recommended you review the [submission guidelines](SUBMISSION-GUIDELINES.md) before starting the exercise.
+
 Interested in working for us? View our [Careers site](http://careers.laterooms.com)!

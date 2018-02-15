@@ -1,5 +1,7 @@
 # The LateRooms Group Node task
 
+> It is recommended you review the [submission guidelines](SUBMISSION-GUIDELINES.md) before starting the exercise.
+
 Please take a couple of hours at most to tackle this task. Your solution will be the basis for a discussion during our interview. 
 
 ## The Task

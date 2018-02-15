@@ -1,5 +1,7 @@
 # The LateRooms Group front-end task
 
+> It is recommended you review the [submission guidelines](SUBMISSION-GUIDELINES.md) before starting the exercise.
+
 Please take a couple of hours at most to tackle this task. Don't rush to 'finish' the task; that isn't really the overall aim, instead focus on demonstrating what you would consider good front-end practice. Your solution will be the basis for a discussion during our interview.
 
 ## The task

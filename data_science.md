@@ -1,5 +1,6 @@
 # LateRooms Data Science Task
 
+> It is recommended you review the [submission guidelines](SUBMISSION-GUIDELINES.md) before starting the exercise.
 
 Please take a couple of hours at most to tackle this task. Don't rush to 'finish' the task; that isn't really the overall aim, instead focus on demonstrating what you would consider good data science practice. Your solution, and the decisions you make will be the basis for a discussion during our interview.
 
