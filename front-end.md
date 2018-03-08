@@ -36,3 +36,6 @@ We would like any JavaScript to be test driven (in whatever library and test fra
 
 Feel free to embellish your solution with whatever lovely CSS3, responsiveness, and HTML5 you wish to show off with.
 
+## Doing the task in-house
+
+If the task is being done at the time of the interview, it would be ideal if you have a laptop with the necessary scaffolding setup for you to create a web app. For eg. To create a react web app you could use Facebook's [`create-react-app`](https://github.com/facebook/create-react-app). And also to run tests against the code, you could use [`enzyme`](https://github.com/airbnb/enzyme). Please feel free to install other packages, you feel necessary to complete the task. 
