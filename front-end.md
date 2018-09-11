@@ -11,19 +11,19 @@ Given the following JSON format (feel free to add more data if you wish)...
 ```json
 [
   {
-    "Name": "hotelone",
-    "StarRating": 5,
-    "Facilities": ["car park", "pool"]
+    "name": "hotelone",
+    "starRating": 5,
+    "facilities": ["car park", "pool"]
   },
   {
-    "Name": "hoteltwo",
-    "StarRating": 3,
-    "Facilities": ["car park", "gym"]
+    "name": "hoteltwo",
+    "starRating": 3,
+    "facilities": ["car park", "gym"]
   },
   {
-    "Name": "hotelthree",
-    "StarRating": 3,
-    "Facilities": []
+    "name": "hotelthree",
+    "starRating": 3,
+    "facilities": []
   }
 ]
 ```
