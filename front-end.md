@@ -34,4 +34,4 @@ Given the following JSON format (feel free to add more data if you wish)...
 
 We would like any JavaScript to be test driven (in whatever library and test framework you feel comfortable with).
 
-Feel free to embellish your solution with whatever lovely CSS3, responsiveness, and HTML5 you wish to show off with.
+Please use React, Redux and any associated libraries you wish to in completing this task. Presentation is less important than functionality for this, but feel free to embellish your solution with whatever lovely CSS3, responsiveness, and HTML5 you wish to show off with.
