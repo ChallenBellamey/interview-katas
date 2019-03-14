@@ -30,7 +30,6 @@ Given the following JSON format (feel free to add more data if you wish)...
 
 1. Display the data on a web page in a format you think would be suitable for a simple search results screen.
 2. Provide a 'filter' which will help the user reduce the list to only hotels with the relevant facilities.
-3. Provide a sort option which will allow a user to order the list on star rating, both descending and ascending.
 
 We would like any JavaScript to be test driven (in whatever library and test framework you feel comfortable with).
 
