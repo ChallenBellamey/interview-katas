@@ -9,7 +9,27 @@ User Stories
 - Upon using the sort by...
     ...user can choose by which property the results are ordered by clicking.
 - Upon using the results list...
-    ...user can see results and scroll through them.
+    ...user can see results, including hotel name and star rating, and scroll through them.
 - Upon using the page interface...
     ...user can see which page they are currently on and move to a different page by clicking.
 */
+
+describe('Simple Search Results Screen', () => {
+    beforeEach(() => {
+        cy.visit('/');
+    })
+
+    it('Filters section displays correctly', () => {
+        cy.get('[data-cy=filtersSection]').should('be.visible');
+        cy.get('[data-cy=filtersHeader]').should('be.visible');
+        cy.get('[data-cy=filtersStarRating]').should('be.visible');
+        cy.get('[data-cy=filtersFacilities]').should('be.visible');
+    })
+
+    it('Results section displays correctly', () => {
+        cy.get('[data-cy=resultsSection]').should('be.visible');
+        cy.get('[data-cy=resultsSortBy]').should('be.visible');
+        cy.get('[data-cy=resultsList]').should('be.visible');
+        cy.get('[data-cy=resultsPageSelect]').should('be.visible');
+    })
+  })
