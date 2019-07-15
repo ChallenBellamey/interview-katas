@@ -20,16 +20,16 @@ describe('Simple Search Results Screen', () => {
     })
 
     it('Filters section displays correctly', () => {
-        cy.get('[data-cy=filtersSection]').should('be.visible');
-        cy.get('[data-cy=filtersHeader]').should('be.visible');
-        cy.get('[data-cy=filtersStarRating]').should('be.visible');
-        cy.get('[data-cy=filtersFacilities]').should('be.visible');
+        cy.get('[data-cy="filtersSection"]').should('be.visible');
+        cy.get('[data-cy="filtersHeader"]').should('be.visible');
+        cy.get('[data-cy="filtersStarRating"]').should('be.visible');
+        cy.get('[data-cy="filtersFacilities"]').should('be.visible');
     })
 
     it('Results section displays correctly', () => {
-        cy.get('[data-cy=resultsSection]').should('be.visible');
-        cy.get('[data-cy=resultsSortBy]').should('be.visible');
-        cy.get('[data-cy=resultsList]').should('be.visible');
-        cy.get('[data-cy=resultsPageSelect]').should('be.visible');
+        cy.get('[data-cy="resultsSection"]').should('be.visible');
+        cy.get('[data-cy="resultsSortBy"]').should('be.visible');
+        cy.get('[data-cy="resultsList"]').should('be.visible');
+        cy.get('[data-cy="resultsPageSelect"]').should('be.visible');
     })
   })
