@@ -1,5 +1,5 @@
 
-export default mockData = [
+const mockData = [
     {
       "name": "hotelone",
       "starRating": 5,
@@ -15,4 +15,6 @@ export default mockData = [
       "starRating": 3,
       "facilities": []
     }
-]
+];
+
+export default mockData;
