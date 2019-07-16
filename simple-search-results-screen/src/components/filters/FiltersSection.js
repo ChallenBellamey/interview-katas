@@ -5,7 +5,7 @@ import FiltersFacilities from './FiltersFacilities';
 
 class FiltersSection extends Component {
     render () {
-        return <div data-cy={"filtersSection"}>
+        return <div className={"filtersSection"} data-cy={"filtersSection"}>
             <FiltersHeader />
             <FiltersStarRating />
             <FiltersFacilities />

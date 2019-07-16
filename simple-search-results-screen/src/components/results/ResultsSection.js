@@ -5,7 +5,7 @@ import ResultsPageSelect from './ResultsPageSelect';
 
 class ResultsSection extends Component {
     render () {
-        return <div data-cy={"resultsSection"}>
+        return <div className={"resultsSection"} data-cy={"resultsSection"}>
             <ResultsSortBy />
             <ResultsList />
             <ResultsPageSelect />

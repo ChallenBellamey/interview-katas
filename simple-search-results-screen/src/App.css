@@ -1,3 +1,17 @@
 .App {
   text-align: center;
+  display: grid;
+  grid-template-columns: 24% 76%;
+  grid-template-areas: "filtersSection resultsSection"
+}
+
+.filtersSection {
+  grid-area: filtersSection;
+  width: 220px;
+  margin: 0px 20px 0px calc(100% - 240px);
+}
+
+.resultsSection {
+  grid-area: resultsSection;
+  width: 760px;
 }
