@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import FiltersSection from './components/FiltersSection';
-import ResultsSection from './components/ResultsSection';
+import FiltersSection from './components/filters/FiltersSection';
+import ResultsSection from './components/results/ResultsSection';
 
 function App() {
   return (
