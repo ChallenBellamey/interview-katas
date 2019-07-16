@@ -1,8 +1,15 @@
 import React, {Component} from 'react';
+import ResultsSortBy from './ResultsSortBy';
+import ResultsList from './ResultsList';
+import ResultsPageSelect from './ResultsPageSelect';
 
 class ResultsSection extends Component {
     render () {
-        return <div data-cy={"resultsSection"}>Results</div>
+        return <div data-cy={"resultsSection"}>
+            <ResultsSortBy />
+            <ResultsList />
+            <ResultsPageSelect />
+        </div>
     }
 }
 
