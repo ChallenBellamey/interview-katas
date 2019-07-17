@@ -6,7 +6,7 @@ function FiltersFacilities ({facilitiesCount, toggleFilter}) {
         {Object.keys(facilitiesCount).map((facility, i) => {
             return <div key={i}>
                 <span>{`${facility} (${facilitiesCount[facility]})`}</span>
-                <input type="checkbox" onChange={event => toggleFilter('facilities', facility)} />
+                <input data-cy={`filterFacility${i}`} type="checkbox" onChange={event => toggleFilter('facilities', facility)} />
             </div>
         })}
     </div>

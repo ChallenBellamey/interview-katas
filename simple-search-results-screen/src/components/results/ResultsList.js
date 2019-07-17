@@ -3,11 +3,11 @@ import React from 'react';
 function ResultsList ({results}) {
     return <div data-cy={"resultsList"}>
         {results.map((result, i) => {
-            return <div key={i}>
-                <span>{result.name}</span>
-                <span>{result.starRating}</span>
+            return <div data-cy={`result${i}`} key={i}>
+                <span data-cy="resultName">{result.name}</span>
+                <span data-cy="resultStarRating">{result.starRating}</span>
                 {result.facilities.map((facility, i) => {
-                    return <span key={i}>{facility}</span>
+                    return <span data-cy="resultFacility" key={i}>{facility}</span>
                 })}
             </div>
         })}
