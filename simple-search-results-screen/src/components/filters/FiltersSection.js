@@ -8,8 +8,14 @@ class FiltersSection extends Component {
     state = {
         facilitiesCount: {},
         selectedFilters: {
-            starRatings: [],
-            facilities: []
+            starRatings: {
+                1: false,
+                2: false,
+                3: false,
+                4: false,
+                5: false
+            },
+            facilities: {}
         }
     }
 
@@ -23,15 +29,31 @@ class FiltersSection extends Component {
     }
 
     componentDidMount () {
-        this.updateFacilitiesCount();
+        this.updateFacilities();
     }
 
-    updateFacilitiesCount () {
+    updateFacilities () {
         getFacilitiesCount()
             .then((facilitiesCount) => {
+                const starRatings = this.state.selectedFilters.starRatings;
+                const facilities = {...this.state.selectedFilters.facilities};
+                Object.keys(facilitiesCount).forEach(facility => {
+                    if (!Object.keys(facilities).includes(facility)) {
+                        facilities[facility] = false;
+                    };
+                });
+                Object.keys(facilities).forEach(facility => {
+                    if (!Object.keys(facilitiesCount).includes(facility)) {
+                        delete facilities[facility];
+                    };
+                });
                 this.setState({
-                    facilitiesCount
-                })
+                    facilitiesCount,
+                    selectedFilters: {
+                        starRatings,
+                        facilities
+                    }
+                });
             })
     }
 }

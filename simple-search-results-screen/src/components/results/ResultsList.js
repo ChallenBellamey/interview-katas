@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 
 function ResultsList () {
     return <div data-cy={"resultsList"}>Results List</div>

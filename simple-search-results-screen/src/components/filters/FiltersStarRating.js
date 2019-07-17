@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 
 function FiltersStarRating () {
     return <div data-cy={"filtersStarRating"}>
