@@ -23,16 +23,16 @@ class FiltersSection extends Component {
         const { facilitiesCount } = this.state;
         return <div className={"filtersSection"} data-cy={"filtersSection"}>
             <FiltersHeader />
-            <FiltersStarRating />
-            <FiltersFacilities facilitiesCount={facilitiesCount} />
+            <FiltersStarRating toggleFilter={this.toggleFilter} />
+            <FiltersFacilities facilitiesCount={facilitiesCount} toggleFilter={this.toggleFilter} />
         </div>
     }
 
-    componentDidMount () {
+    componentDidMount = () => {
         this.updateFacilities();
     }
 
-    updateFacilities () {
+    updateFacilities = () => {
         getFacilitiesCount()
             .then((facilitiesCount) => {
                 const starRatings = this.state.selectedFilters.starRatings;
@@ -55,6 +55,20 @@ class FiltersSection extends Component {
                     }
                 });
             })
+    }
+
+    toggleFilter = (type, content) => {
+        this.setState(prevState => {
+            return {
+                selectedFilters: {
+                    ...prevState.selectedFilters,
+                    [type]: {
+                        ...prevState.selectedFilters[type],
+                        [content]: !prevState.selectedFilters[type][content]
+                    }
+                }
+            };
+        });
     }
 }
 
