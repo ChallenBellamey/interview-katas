@@ -32,4 +32,10 @@ describe('Simple Search Results Screen', () => {
         cy.get('[data-cy="resultsList"]').should('be.visible');
         cy.get('[data-cy="resultsPageSelect"]').should('be.visible');
     })
+
+    it('Results list displays results', () => {
+        cy.get('[data-cy="resultName"]').should('be.visible');
+        cy.get('[data-cy="resultStarRating"]').should('be.visible');
+        cy.get('[data-cy="resultFacility"]').should('be.visible');
+    })
   })
