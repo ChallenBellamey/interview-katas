@@ -14,3 +14,7 @@
   grid-area: resultsSection;
   width: 760px;
 }
+
+.filterActive-true {
+  background-color: yellow;
+}

@@ -20,10 +20,10 @@ class FiltersSection extends Component {
     }
 
     render () {
-        const { facilitiesCount } = this.state;
+        const { facilitiesCount, selectedFilters } = this.state;
         return <div className={"filtersSection"} data-cy={"filtersSection"}>
             <FiltersHeader />
-            <FiltersStarRating toggleFilter={this.toggleFilter} />
+            <FiltersStarRating toggleFilter={this.toggleFilter} filterActive={selectedFilters.starRatings} />
             <FiltersFacilities facilitiesCount={facilitiesCount} toggleFilter={this.toggleFilter} />
         </div>
     }
