@@ -19,9 +19,10 @@ class ResultsSection extends Component {
     }
 
     render = () => {
+        const { results } = this.state;
         return <div className={"resultsSection"} data-cy={"resultsSection"}>
             <ResultsSortBy />
-            <ResultsList />
+            <ResultsList results={results} />
             <ResultsPageSelect />
         </div>
     }
