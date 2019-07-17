@@ -7,11 +7,11 @@ User Stories
     ...user can toggle which star ratings show up in the results by clicking.
     ...user can toggle which facilities show up in the results by clicking.
 - Upon using the sort by...
-    ...user can choose by which property the results are ordered by clicking.
+    ...user can choose by which property the results are ordered by clicking. (not currently implemented)
 - Upon using the results list...
     ...user can see results, including hotel name and star rating, and scroll through them.
 - Upon using the page interface...
-    ...user can see which page they are currently on and move to a different page by clicking.
+    ...user can see which page they are currently on and move to a different page by clicking. (not currently implemented)
 */
 
 describe('Simple Search Results Screen', () => {
