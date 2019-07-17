@@ -18,3 +18,7 @@
 .filterActive-true {
   background-color: yellow;
 }
+
+.subcomponent {
+  padding: 10px 0px;
+}

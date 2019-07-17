@@ -1,7 +1,7 @@
 import React from 'react';
 
 function ResultsPageSelect () {
-    return <div data-cy={"resultsPageSelect"}>
+    return <div className="subcomponent" data-cy={"resultsPageSelect"}>
         <button>{"<"}</button>
         <span>page</span>
         <button>{">"}</button>

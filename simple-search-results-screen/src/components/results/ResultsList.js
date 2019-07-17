@@ -1,7 +1,7 @@
 import React from 'react';
 
 function ResultsList ({results}) {
-    return <div data-cy={"resultsList"}>
+    return <div className="subcomponent" data-cy={"resultsList"}>
         {results.map((result, i) => {
             return <div data-cy={`result${i}`} key={i}>
                 <span data-cy="resultName">{result.name}</span>
