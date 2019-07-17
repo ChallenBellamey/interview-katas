@@ -1,6 +1,6 @@
 import mockData from '../data/mockData.js';
 
-function getFacilities () {
+export const getFacilities = async () => {
     const facilities = mockData.reduce((acc, hotel) => {
         hotel.facilities.forEach(nextFacility => {
             if (Object.keys(acc).includes(nextFacility)) {
