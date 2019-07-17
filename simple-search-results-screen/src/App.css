@@ -22,3 +22,8 @@
 .subcomponent {
   padding: 10px 0px;
 }
+
+.resultBox {
+  border: 1px solid;
+  padding: 5px;
+}
