@@ -6,7 +6,11 @@ import { getFacilitiesCount } from '../../requests/get.js';
 
 class FiltersSection extends Component {
     state = {
-        facilitiesCount: {}
+        facilitiesCount: {},
+        selectedFilters: {
+            starRatings: [],
+            facilities: []
+        }
     }
 
     render () {
@@ -19,6 +23,10 @@ class FiltersSection extends Component {
     }
 
     componentDidMount () {
+        this.updateFacilitiesCount();
+    }
+
+    updateFacilitiesCount () {
         getFacilitiesCount()
             .then((facilitiesCount) => {
                 this.setState({
