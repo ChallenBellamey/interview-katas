@@ -2,7 +2,7 @@ import React from 'react';
 
 function FiltersFacilities ({facilitiesCount, toggleFilter}) {
     return <div className="subcomponent" data-cy={"filtersFacilities"}>
-        <span>Facilities</span>
+        <b><span>Facilities</span></b>
         {Object.keys(facilitiesCount).map((facility, i) => {
             return <div key={i}>
                 <span>{`${facility} (${facilitiesCount[facility]})`}</span>

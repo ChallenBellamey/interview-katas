@@ -1,9 +1,7 @@
-# Interview Katas
+# How To Use
 
-Following the Guardian's [example](https://www.theguardian.com/info/developer-blog/2016/jan/20/the-guardians-new-pairing-exercises) of publishing their interview tests, we are publishing our tests. No advantage can be gained by reviewing these ahead of time, we will be interested in the _how_ rather than the _what_ you do.
-
-Different roles will have different interviewing techniques and criteria, and you will be advised of this as part of the application process.
-
-It is recommended you review the [submission guidelines](SUBMISSION-GUIDELINES.md) before starting the exercise.
-
-Interested in working for us? View our [Careers site](http://careers.laterooms.com)!
+1. Git clone this repository.
+2. Open up a terminal at the simple-search-results-screen directory.
+3. run npm install.
+4. run npm start to start a local server.
+5. run npx cypress open to open up the Cypress test suite.
