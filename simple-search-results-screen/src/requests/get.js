@@ -1,7 +1,7 @@
 import mockData from '../data/mockData.js';
 
-export const getFacilities = async () => {
-    const facilities = mockData.reduce((acc, hotel) => {
+export const getFacilitiesCount = async () => {
+    const facilitiesCount = mockData.reduce((acc, hotel) => {
         hotel.facilities.forEach(nextFacility => {
             if (Object.keys(acc).includes(nextFacility)) {
                 acc[nextFacility]++;
@@ -11,5 +11,5 @@ export const getFacilities = async () => {
         });
         return acc;
     }, {});
-    return facilities;
+    return facilitiesCount;
 };

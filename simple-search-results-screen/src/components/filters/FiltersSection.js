@@ -2,27 +2,27 @@ import React, {Component} from 'react';
 import FiltersHeader from './FiltersHeader';
 import FiltersStarRating from './FiltersStarRating';
 import FiltersFacilities from './FiltersFacilities';
-import { getFacilities } from '../../requests/get.js';
+import { getFacilitiesCount } from '../../requests/get.js';
 
 class FiltersSection extends Component {
     state = {
-        facilities: []
+        facilitiesCount: {}
     }
 
     render () {
-        const { facilities } = this.state;
+        const { facilitiesCount } = this.state;
         return <div className={"filtersSection"} data-cy={"filtersSection"}>
             <FiltersHeader />
             <FiltersStarRating />
-            <FiltersFacilities />
+            <FiltersFacilities facilitiesCount={facilitiesCount} />
         </div>
     }
 
     componentDidMount () {
-        getFacilities()
-            .then((facilities) => {
+        getFacilitiesCount()
+            .then((facilitiesCount) => {
                 this.setState({
-                    facilities
+                    facilitiesCount
                 })
             })
     }
