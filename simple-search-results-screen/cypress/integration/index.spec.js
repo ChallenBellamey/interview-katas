@@ -48,4 +48,18 @@ describe('Simple Search Results Screen', () => {
         cy.get('[data-cy="result1"]').should('be.visible');
         cy.get('[data-cy="result2"]').should('not.be.visible');
     })
+
+    it('Results list updates upon selecting rating filters', () => {
+        cy.get('[data-cy="filterFacility0"]').check()
+        cy.get('[data-cy="result0"]').should('be.visible');
+        cy.get('[data-cy="result1"]').should('be.visible');
+        cy.get('[data-cy="result2"]').should('not.be.visible');
+
+        cy.get('[data-cy="filterFacility1"]').check()
+        cy.get('[data-cy="result0"]').should('be.visible');
+        cy.get('[data-cy="result1"]').should('not.be.visible');
+
+        cy.get('[data-cy="filterFacility2"]').check()
+        cy.get('[data-cy="result0"]').should('not.be.visible');
+    })
   })
