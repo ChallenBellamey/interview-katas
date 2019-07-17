@@ -68,7 +68,7 @@ class FiltersSection extends Component {
                     }
                 }
             };
-        });
+        }, () => this.props.updateResults(this.state.selectedFilters));
     }
 }
 
